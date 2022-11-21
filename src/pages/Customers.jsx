@@ -11,7 +11,7 @@ const Customers = () => {
 
   return (
     <div className="m-2 md:m-10 mt-24 p-2 md:p-10 bg-white rounded-3xl">
-      <Header category="Page" title="Customers" />
+      <Header title="Customers" />
       <GridComponent
         dataSource={customersData}
         enableHover={false}
@@ -23,7 +23,6 @@ const Customers = () => {
         allowSorting
       >
         <ColumnsDirective>
-          {/* eslint-disable-next-line react/jsx-props-no-spreading */}
           {customersGrid.map((item, index) => <ColumnDirective key={index} {...item} />)}
         </ColumnsDirective>
         <Inject services={[Page, Selection, Toolbar, Edit, Sort, Filter]} />

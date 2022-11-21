@@ -4,7 +4,7 @@ import { GoPrimitiveDot } from 'react-icons/go';
 import { IoIosMore } from 'react-icons/io';
 import { DropDownListComponent } from '@syncfusion/ej2-react-dropdowns';
 
-import { Stacked, Pie, Button, LineChart, SparkLine } from '../components';
+import { Stacked, Pie, Button, SparkLine } from '../components';
 import { earningData, medicalproBranding, recentTransactions, weeklyStats, dropdownData, SparklineAreaData, ecomPieChartData } from '../data/dummy';
 import { useStateContext } from '../contexts/ContextProvider';
 import product9 from '../data/product9.jpg';
@@ -198,9 +198,9 @@ const Ecommerce = () => {
             <p className="text-xl font-semibold">Sales Overview</p>
             <DropDown currentMode={currentMode} />
           </div>
-          <div className="md:w-full overflow-auto">
-            <LineChart />
-          </div>
+          {/* <div className="md:w-full overflow-auto">
+          
+          </div> */}
         </div>
       </div>
 
