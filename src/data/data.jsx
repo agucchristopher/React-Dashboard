@@ -770,7 +770,7 @@ export const productsPerformance = [
   },
 ];
 
-export const medicalproBranding = {
+export const choppaddi = {
   data: [
     {
       title: 'Due Date',
@@ -787,13 +787,17 @@ export const medicalproBranding = {
   ],
   teams: [
     {
-      name: 'Bootstrap',
+      name: 'Backend',
       color: 'orange',
     },
     {
-      name: 'Angular',
+      name: 'Frontend',
       color: '#FB9678',
     },
+    {
+      name: 'Designers',
+      color: 'fuschia'
+    }
   ],
   leaders: [
     {
@@ -917,6 +921,79 @@ export const ordersGrid = [
     width: '150',
     textAlign: 'Center',
   },
+];
+
+export const restaurantsData = [
+  {
+    RestaurantID: 1,
+    RestaurantName: 'Chops',
+    RestaurantEmail: 'chops@gmail.com',
+    RestaurantImage:
+      avatar,
+    Status: 'Approved',
+    StatusBg: '#8BE78B',
+    Weeks: '3',
+    Budget: '$2.4k',
+    Location: 'India',
+    Approved: 'True',
+    Earnings: '$50',
+  }
+]
+const restaurantGridStatus = (props) => (
+  <div className="flex gap-2 justify-center items-center text-gray-700 capitalize">
+    <p style={{ background: props.StatusBg }} className="rounded-full h-3 w-3" />
+    <p>{props.Status}</p>
+  </div>
+);
+const restaurantGridImage = (props) => (
+  <div className="image flex gap-4">
+    <img
+      className="rounded-full w-10 h-10"
+      src={props.RestaurantImage}
+      alt="employee"
+    />
+    <div>
+      <p>{props.RestaurantName}</p>
+      <p>{props.RestaurantEmail}</p>
+    </div>
+  </div>
+);
+export const restaurantsGrid = [
+  { type: 'checkbox', width: '50' },
+  { headerText: 'Name',
+    width: '150',
+    template: restaurantGridImage,
+    textAlign: 'Center' },
+  { field: 'Approved',
+    headerText: 'Approved',
+    width: '130',
+    format: 'yMd',
+    textAlign: 'Center',
+    template: restaurantGridStatus },
+  {
+    field: 'Weeks',
+    headerText: 'Weeks',
+    width: '100',
+    format: 'C2',
+    textAlign: 'Center' },
+  { field: 'Earnings',
+    headerText: 'Earnings',
+    width: '100',
+    format: 'yMd',
+    textAlign: 'Center' },
+
+  { field: 'Location',
+    headerText: 'Location',
+    width: '150',
+    textAlign: 'Center' },
+
+  { field: 'RestaurantID',
+    headerText: 'Restaurant ID',
+    width: '120',
+    textAlign: 'Center',
+    isPrimaryKey: true,
+  },
+
 ];
 
 export const customersData = [

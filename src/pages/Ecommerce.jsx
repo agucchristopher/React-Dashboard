@@ -5,7 +5,7 @@ import { IoIosMore } from 'react-icons/io';
 import { DropDownListComponent } from '@syncfusion/ej2-react-dropdowns';
 
 import { Stacked, Pie, Button, SparkLine } from '../components';
-import { earningData, medicalproBranding, recentTransactions, weeklyStats, dropdownData, SparklineAreaData, ecomPieChartData } from '../data/dummy';
+import { earningData, choppaddi, recentTransactions, weeklyStats, dropdownData, SparklineAreaData, ecomPieChartData } from '../data/data';
 import { useStateContext } from '../contexts/ContextProvider';
 import product9 from '../data/product9.jpg';
 
@@ -241,7 +241,7 @@ const Ecommerce = () => {
         </div>
         <div className="w-400 bg-white dark:text-gray-200 dark:bg-secondary-dark-bg rounded-2xl p-6 m-3">
           <div className="flex justify-between">
-            <p className="text-xl font-semibold">MedicalPro Branding</p>
+            <p className="text-xl font-semibold">Chop Paddi</p>
             <button type="button" className="text-xl font-semibold text-gray-400">
               <IoIosMore />
             </button>
@@ -251,7 +251,7 @@ const Ecommerce = () => {
           </p>
 
           <div className="flex gap-4 border-b-1 border-color mt-6">
-            {medicalproBranding.data.map((item) => (
+            {choppaddi.data.map((item) => (
               <div key={item.title} className="border-r-1 border-color pr-4 pb-2">
                 <p className="text-xs text-gray-400">{item.title}</p>
                 <p className="text-sm">{item.desc}</p>
@@ -262,7 +262,7 @@ const Ecommerce = () => {
             <p className="text-md font-semibold mb-2">Teams</p>
 
             <div className="flex gap-4">
-              {medicalproBranding.teams.map((item) => (
+              {choppaddi.teams.map((item) => (
                 <p
                   key={item.name}
                   style={{ background: item.color }}
@@ -276,7 +276,7 @@ const Ecommerce = () => {
           <div className="mt-2">
             <p className="text-md font-semibold mb-2">Leaders</p>
             <div className="flex gap-4">
-              {medicalproBranding.leaders.map((item, index) => (
+              {choppaddi.leaders.map((item, index) => (
                 <img key={index} className="rounded-full w-8 h-8" src={item.image} alt="" />
               ))}
             </div>
