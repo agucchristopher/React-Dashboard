@@ -3,7 +3,7 @@ import { MdOutlineCancel } from 'react-icons/md';
 import { AiOutlinePlus, AiOutlineMinus } from 'react-icons/ai';
 
 import { useStateContext } from '../contexts/ContextProvider';
-import { cartData } from '../data/dummy';
+import { cartData } from '../data/data';
 import { Button } from '.';
 
 const Cart = () => {
@@ -44,13 +44,13 @@ const Cart = () => {
           </div>
         ))}
         <div className="mt-3 mb-3">
-          <div className="flex justify-between items-center">
+          {/* <div className="flex justify-between items-center">
             <p className="text-gray-500 dark:text-gray-200">Sub Total</p>
-            <p className="font-semibold">$890</p>
-          </div>
+            <p className="font-semibold">$2600</p>
+          </div> */}
           <div className="flex justify-between items-center mt-3">
             <p className="text-gray-500 dark:text-gray-200">Total</p>
-            <p className="font-semibold">$890</p>
+            <p className="font-semibold">$2600</p>
           </div>
         </div>
         <div className="mt-5">

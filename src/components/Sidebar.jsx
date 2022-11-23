@@ -11,6 +11,7 @@ import {SiShopware} from 'react-icons/si'
 import {MdOutlineCancel, MdRestaurant} from 'react-icons/md'
 import { TooltipComponent } from "@syncfusion/ej2-react-popups"
 import { useStateContext } from '../contexts/ContextProvider';
+import logo from '../../public/images/logo.jpg'
 const Sidebar = () => {
   const { activeMenu, setActiveMenu } = useStateContext()
   const links = [
@@ -90,7 +91,7 @@ const Sidebar = () => {
       <>
       <div className="flex justify-between items-center">
         <Link to={'/'} onClick={()=>{setActiveMenu(false)}} className='items-center gap-3 ml-3 mt-4 flex text-xl font-extrabold tracking-tight dark:text-white text-slate-900'>
-          <SiShopware /> Chop Paddi
+          <img src={logo} className='h-9 rounded-full'/> Chop Paddi
         </Link>
         <TooltipComponent content={'Menu'} position='BottomCenter'>
           <button type='button' onClick={()=>{setActiveMenu(prev => !prev)}} className='text-xl rounded-full hover:bg-light-gray mt-4 block md:hidden m-2'>

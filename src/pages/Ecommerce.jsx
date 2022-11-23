@@ -8,6 +8,7 @@ import { Stacked, Pie, Button, SparkLine } from '../components';
 import { earningData, choppaddi, recentTransactions, weeklyStats, dropdownData, SparklineAreaData, ecomPieChartData } from '../data/data';
 import { useStateContext } from '../contexts/ContextProvider';
 import product9 from '../data/product9.jpg';
+import { Link } from 'react-router-dom';
 
 const DropDown = ({ currentMode }) => (
   <div className="w-28 border-1 border-color px-2 py-1 rounded-md">
@@ -36,12 +37,14 @@ const Ecommerce = () => {
             </button>
           </div>
           <div className="mt-6">
+            <Link to={''}>
             <Button
               color="white"
               bgColor={currentColor}
               text="Download"
-              borderRadius="10px"
+              borderRadius="45px"
             />
+            </Link>
           </div>
         </div>
         <div className="flex m-3 flex-wrap justify-center gap-1 items-center">
@@ -308,8 +311,8 @@ const Ecommerce = () => {
               alt=""
             />
             <div className="mt-8">
-              <p className="font-semibold text-lg">React 18 coming soon!</p>
-              <p className="text-gray-400 ">By Johnathan Doe</p>
+              <p className="font-semibold text-lg">Chop Paddi is coming soon!</p>
+              <p className="text-gray-400 ">By Agu C. Christopher.</p>
               <p className="mt-8 text-sm text-gray-400">
                 This will be the small description for the news you have shown
                 here. There could be some great info.

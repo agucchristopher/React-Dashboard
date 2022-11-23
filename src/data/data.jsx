@@ -562,21 +562,21 @@ export const cartData = [
   {
     image:
       product5,
-    name: 'butterscotch ice-cream',
-    category: 'Milk product',
-    price: '$250',
+    name: 'Macbook 2022',
+    category: 'Electronics product',
+    price: '$1500',
   },
   {
     image:
       product6,
-    name: 'Supreme fresh tomato',
-    category: 'Vegetable Item',
-    price: '$450',
+    name: 'iPhone 14',
+    category: 'Electronics Product',
+    price: '$1000',
   },
   {
     image:
       product7,
-    name: 'Red color candy',
+    name: 'New Set Of Food Wrappers',
     category: 'Food Item',
     price: '$190',
   },
@@ -586,7 +586,7 @@ export const chatData = [
   {
     image:
       avatar2,
-    message: 'Roman Joined the Team!',
+    message: 'David joined the Team!',
     desc: 'Congratulate him',
     time: '9:08 AM',
   },
@@ -594,7 +594,7 @@ export const chatData = [
     image:
       avatar3,
     message: 'New message received',
-    desc: 'Salma sent you new message',
+    desc: 'Victor sent you new message',
     time: '11:56 AM',
   },
   {
@@ -607,7 +607,7 @@ export const chatData = [
   {
     image:
       avatar,
-    message: 'Jolly completed tasks',
+    message: 'Tolulope completed tasks',
     desc: 'Assign her new tasks',
     time: '1:12 AM',
   },
@@ -796,7 +796,7 @@ export const choppaddi = {
     },
     {
       name: 'Designers',
-      color: 'fuschia'
+      color: 'brown'
     }
   ],
   leaders: [
@@ -848,6 +848,14 @@ export const themeColors = [
     color: '#FB9678',
     name: 'orange-theme',
   },
+  {
+    name: 'brown-theme',
+    color: 'brown',
+  },
+  // {
+  //   name: 'black-theme',
+  //   color:'black'
+  // }
 ];
 
 export const userProfileData = [
